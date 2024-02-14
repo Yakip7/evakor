@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding: 20px;
+  background-image: linear-gradient(to right, #d4145ab2, #2e3192b2);
+  color: #ffffff;
+}
+.header__tel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+.header__tel img {
+  margin-right: 10px;
+}
+.header__tel span {
+  margin-right: 10px;
+}
+
+.header__city {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  font-size: 15px;
+}
+.header__city img {
+  margin-right: 10px;
+}
+.header__instagram {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.header__instagram img {
+  margin-right: 10px;
+}
+.header__instagram a {
+  color: #ffffff;
+}
+
+/* main */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/icons/main/block.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: right;
+}
+.main__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 50px;
+  font-weight: 900;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 47px;
+}
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: #737373;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.main__description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 0 20px;
+}
+.description__left {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 8px;
+}
+.description__right {
+  display: flex;
+  flex-grow: 1;
+}
+.description__right img {
+  width: 100%;
+}
+.description__title {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 23px;
+}
+.description__cityname {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+.order-eva {
+  font-size: 10px;
+  font-weight: 900;
+  color: #ffffff;
+  width: 93px;
+  height: 28px;
+  border-radius: 7px;
+  text-transform: uppercase;
+
+  background: linear-gradient(95.2deg, #b90160 2.23%, #2e3192 99.51%);
+}
+
+.main-header__nav div:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* info */
+.info {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/icons/info/back2.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.info__header {
+  text-align: center;
+  font-size: 50px;
+}
+.info__header span {
+  background-image: linear-gradient(to bottom, #b90160, #3d5bf5);
+  background-clip: text;
+  color: transparent;
+}
+.info__rugs-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+  margin-top: 50px;
+  gap: 50px;
+}
+.list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.list__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.item__description {
+  padding: 20px 30px;
+}
+.description__header {
+  font-size: 36px;
+}
+.description__text {
+  font-size: 14px;
+  color: #767676;
+  margin-top: 20px;
+}
+/* слайдер */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(to right, #d4145a54, #2e31923d);
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.slides {
+  width: 100%;
+  display: flex;
+  transition: transform 0.5s ease;
+
+  gap: 50px;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  background-color: #3d5bf5;
+  padding: 20px;
+  background-color: #efcfde;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.5;
+  gap: 10px;
+  max-width: 600px;
+}
+.slide img {
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+}
+.active {
+  background-color: #ffffffff;
+  opacity: 1;
+}
+.decoration {
+  content: "";
+  background: linear-gradient(to right, #d4145a, #3d5bf5);
+  width: 130px;
+  height: 2px;
+}

@@ -1,0 +1,44 @@
+.footer {
+  background-image: url(../img/footer/footer.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 100px;
+  gap: 20px;
+}
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__tel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.social__header {
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.tel__header {
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.about__header {
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.about__info {
+  max-width: 250px;
+}
